@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade - Thiago</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
@@ -21,12 +23,24 @@
     <main class="main">
         <section class="change-button">
             <h2>2 - Mudar cor do botão</h2>
-            <button class="btn">Toque para mudar de cor</button>
+            <button class="btn" id="botao">Toque para mudar de cor</button>
         </section>
 
         <section class="insert-remove">
-            <h2>3 - Manipular o DOM</h2>
+            <h2>3 - Manipular o DOM (add and remove)</h2>
+            <div class="cln">
+                <input type="text" id="itemInput" placeholder="Digite o item" />
+                <button id="addItemBtn">Adicionar Item</button>
+                <ol id="itemList"></ol>
+            </div>
+        </section>
+
+        <section class="consome-dados">
+            <h2>4 - Consome dados de uma API</h2>
         </section>
     </main>
+
+    <script src="/js/script.js"></script>
 </body>
+
 </html>

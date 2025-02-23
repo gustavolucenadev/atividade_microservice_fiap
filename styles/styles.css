@@ -44,13 +44,11 @@
 
 .btn {
     margin-top: 20px;
-    background-color: aqua;
+    background-color: blue;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
-    background-size: 300% 300%;
-    color: black;
+    color: white;
     font-weight: bold;
     border: none;
     padding: 10px 20px;
@@ -58,19 +56,79 @@
     cursor: pointer;
     border-radius: 5px;
     transition: 0.4s;
-    animation: rgbAnimation 3s infinite linear;
 }
 
-@keyframes rgbAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.insert-remove {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+
+#itemInput {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e84c26;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
+
+#itemInput:focus {
+    border-color: #e95d1f
+}
+
+#addItemBtn {
+    padding: 10px 20px;
+    background-color: #e84c26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addItemBtn:hover {
+    background-color: #e95d1f;
+}
+
+#addItemBtn:active {
+    background-color: #e73a2f;
+}
+
+.remove-btn {
+    margin-left: 50px;
+    padding: 5px 10px;
+    background-color: #e84c26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+
+}
+
+
+#itemList li {
+    margin-bottom: 10px;
+}
+
+
+.consome-dados {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 
 
