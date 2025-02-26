@@ -35,9 +35,87 @@
             </div>
         </section>
 
-        <section class="consome-dados">
+        <section class="consome-dados" id="pad">
             <h2>4 - Consome dados de uma API</h2>
+            <div>
+                <button id="api-btn">Clique para ver a mensagem da API!</button>
+                <input type="text" id="api-input">
+            </div>
         </section>
+
+        <section class="enviar-dados" id="pad">
+            <h2>5 - Enviar dados para a API (POST)</h2>
+            <form id="postForm">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="post-response"></div>
+        </section>
+
+        <section class="exibir-tabela" id="pad">
+            <h2>6 - Exibindo dados retornados em tabela</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="manipular-json" id="pad">
+            <h2>7 - Manipulação do JSON recebido</h2>
+            <button id="filtrar-btn">Filtrar maiores de 18</button>
+            <button id="reset-btn">Resetar Filtro</button>
+        </section>
+
+        <section class="crud" id="pad">
+            <h2>8 - Criação de um pequeno CRUD</h2>
+            <button id="add-item">Adicionar Item</button>
+            <button id="update-item">Atualizar Item</button>
+            <button id="delete-item">Deletar Item</button>
+        </section>
+
+        <section class="validacao-form" id="pad">
+            <h2>9 - Validação de formulários com JavaScript</h2>
+            <form id="validForm">
+                <input type="text" id="validNome" placeholder="Nome" required>
+                <span class="error" id="nomeError"></span>
+                <input type="email" id="validEmail" placeholder="E-mail" required>
+                <span class="error" id="emailError"></span>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="integracao-completa" id="pad">
+            <h2>10 - Integração completa: listagem, cadastro e exibição dinâmica</h2>
+            <div class="listagem">
+                <h3>Listar dados</h3>
+                <button id="listar-dados">Carregar Dados</button>
+                <table id="full-data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="cadastro">
+                <h3>Cadastrar novo</h3>
+                <form id="cadastroForm">
+                    <input type="text" id="cadastroNome" placeholder="Nome" required>
+                    <input type="email" id="cadastroEmail" placeholder="E-mail" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+    
     </main>
 
     <script src="/js/script.js"></script>

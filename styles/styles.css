@@ -114,6 +114,14 @@
 
 }
 
+#pad {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 #itemList li {
     margin-bottom: 10px;
@@ -126,6 +134,45 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+#api-input {
+    margin-top: 10px;
+    display: block
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background: #007BFF;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
 }
 
 
